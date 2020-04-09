@@ -1,0 +1,62 @@
+.features
+
+  &--middle
+    position: relative
+    z-index: 2
+    margin-top:    -2.8em
+    margin-bottom: -2.8em
+
+    +sm
+      margin-top:    -2em
+      margin-bottom: -2em
+  
+  &--general
+    // margin: em 0
+
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    align-items: center
+
+    +sm
+      flex-direction: column
+
+  &__item
+    border-right: .1em solid #edebeb
+
+    +sm
+      border-right: none
+      border-bottom: .1em solid #edebeb
+
+    &:last-of-type
+      border-right: none
+
+      +sm
+        border-bottom: none
+
+  &-item
+    display: flex
+    align-items: flex-start
+    padding: 1.7em 2.45em
+
+    color: #474e53
+    font-size: .75em
+
+    +sm
+      width: 100%
+      align-items: center
+      padding: 0.95em 1.45em
+
+      font-size: .7em
+
+    &__img
+      flex-shrink: 0
+      height: 3.85em
+      margin-right: 1.25em
+    
+    &__text
+
+      +sm
+        margin: 0

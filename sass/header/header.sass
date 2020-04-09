@@ -1,0 +1,113 @@
+.header
+  position: relative
+  padding: 1.2em 0
+
+  +sm
+    // padding: 1.32em 0
+
+  &__wrap
+    display: flex
+    align-items: center
+
+    +sm
+      flex-direction: column
+      // align-items: flex-start
+  
+  &__btn
+    // flex-shrink: 0
+  
+  &__block
+    margin-right: 1.55em
+
+    +sm
+      margin-right: 0
+
+      &--sm-first
+        order: -1
+        margin-top:   1.88em
+        margin-bottom: 0.8em
+
+      &--sm-last
+        order: 1
+        margin-top: 0.8em
+  
+  &__navigation-btn
+    display: none
+    position: absolute !important
+    left: 9.776em
+    top:    1em
+    width:  1.8em
+    height: 1.8em
+
+    box-shadow: 0.3em 0.4em 2.1em rgba(12, 126, 75, 0.35)
+    background-color: #18965e
+    border-radius: .25em 0 0 .25em
+    border: none
+    border-bottom: .175em solid #0c7e4b
+    padding: .8em .9em
+
+    color: white
+    font-size: 1.3em
+
+    +sm
+      display: flex
+  
+  &__logo
+    margin-right: auto
+
+    picture
+      font-size: 1em
+      height: 2.585em
+
+    img
+      height: 100%
+
+  &-block
+    display: flex
+    align-items: flex-start
+
+    &-group
+      display: flex
+      align-items: center
+      flex-shrink: 0
+
+      +sm
+        flex-direction: column
+
+      &--vertical
+        flex-direction: column
+        align-items: flex-start
+
+        .header__block
+          margin-right: 0
+
+          &:first-of-type
+            margin-bottom: 1.21em
+
+          &:last-of-type
+            margin-top: 1.21em
+
+        .header-block
+          &__title
+            color: white
+
+    &__icon
+      margin-right: 0.46em
+      height: .85em
+    
+    &__title
+      margin: 0
+
+      color: #474e53
+      font-size: .75em
+      font-weight: normal
+
+      &--phone
+        color: #484f53
+        font-size: 1em
+        font-weight: bold
+        line-height: .85em
+    
+    &__text
+      font-size: .67em
+      color: #9ea7ad

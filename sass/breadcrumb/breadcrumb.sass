@@ -1,0 +1,42 @@
+.breadcrumb
+  padding: .85em 0
+  border-bottom: .045em solid #eee
+  border-top:    .045em solid #eee
+
+  +sm
+    display: none
+
+  &-list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    align-items: center
+  
+  &-item
+    position: relative
+    margin-right: 1.6em 
+    color: #9ea7ad
+    font-size: .75em
+
+    &:hover
+      text-decoration: underline
+
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      right: -1em
+      top:   50%
+      transform: translateY(-50%) rotate(45deg)
+      width:  .4em
+      height: .4em
+      margin-top: .05em
+      border-top:    .07em solid #9ea7ad
+      border-right:  .07em solid #9ea7ad
+
+    &:last-child
+      color: #474e53
+
+      &::after
+        display: none

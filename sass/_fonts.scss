@@ -1,0 +1,31 @@
+$fonts: '../fonts/';
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'),
+       local('PTSans-Regular'),
+       url($fonts + 'PTSans-Regular/PTSans-Regular.woff2') format('woff2'),
+       url($fonts + 'PTSans-Regular/PTSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin regular {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'),
+       local('PTSans-Bold'),
+       url($fonts + 'PTSans-Bold/PTSans-Bold.woff2') format('woff2'),
+       url($fonts + 'PTSans-Bold/PTSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin bold {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,50 @@
+.table
+  width: 100%
+  border-collapse: collapse
+  border-top: .2em solid #18955e
+
+  text-align: left
+
+  +sm
+    display: none
+  
+  &-mobile
+    display: none
+    border-radius: .2em
+
+    .tr
+      display: flex
+      justify-content: space-between
+      align-items: center
+    
+    .th,
+    .td
+      padding: .8em !important
+
+    +sm
+      display: table
+
+  thead
+    position: relative
+    z-index: 2
+    box-shadow: 0.8em 1.4em 2.7em rgba(0, 0, 0, 0.05)
+
+  tbody .tr
+    border-bottom: .1em solid #f0f0f0
+
+    &:last-child
+      border-bottom: none
+
+  .th
+    padding: .85em 1.6em
+    background-color: white
+
+    color: #474e53
+    font-size: .75em
+  
+  .td
+    padding: .85em 1.6em
+    background-color: #fcfcfc
+
+    color: #9ea7ad
+    font-size: .75em

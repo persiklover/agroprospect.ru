@@ -1,0 +1,220 @@
+.presentation
+  position: relative
+  z-index: 0
+
+  +sm
+    max-width: 100%
+    padding: 0
+    margin: 0
+
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    z-index: -1
+    left: 22.8em
+    top:  4.4em
+    width:  68.3em
+    height: 53.7em
+
+    box-shadow: 0.8em 1.3em 4em rgba(0, 0, 0, 0.09)
+    border: 0.8em solid #18965e
+
+    font-size: .427em
+
+    +sm
+      display: none
+  
+  &--mb
+    margin-bottom: 8em
+  
+  &--reversed &-text
+    right: auto
+    left: 0
+
+  &--reversed &-cover
+    margin-left: auto
+  
+  &--small
+    font-size: .5em
+
+    .presentation
+      &-cover
+        +sm
+          display: flex
+          max-width: 100%
+
+          img
+            height: auto
+            width: 100%
+
+      &-text
+        width:  25em
+        height: 17em
+        top: 50%
+        z-index: -1
+
+        +sm
+          width: 100%
+          height: auto
+
+        a
+          color: $mainColor
+          font-size: .75em
+          text-decoration: underline
+          line-height: 1.4
+
+          &:hover,
+          &:focus
+            color: #9ea7ad
+            text-decoration: none
+      
+      &__wrap
+        padding-left:  6em
+        padding-right: 2em
+        font-size: 1.5em
+
+        +sm
+          padding: 1em
+  
+  &s
+    overflow: hidden
+    margin: 2em 0 0
+
+    .presentation
+      margin-top:     2.5em
+      margin-bottom: 7.15em
+
+      +sm
+        margin-top:    2.5em
+        margin-bottom: .35em
+
+  &-cover
+    width: 28.46em
+
+    +sm
+      max-width: 15em // maybe 100%
+      // width: 4em
+
+    img
+      max-width: 100% !important
+      height: 22.4em
+
+      +sm
+        height: 12.6em
+
+    .owl
+      &-nav
+      
+      &-prev,
+      &-next
+        position: absolute
+        bottom: 0
+        left: 0
+        width:  6.9em
+        height: 5.4em
+        background: white !important
+        box-shadow: 0.8em 1.3em 8.1em rgba(0, 0, 0, 0.45) !important
+
+        font-size: .42em !important
+
+        &:hover::before
+          background-image: url("../img/arrow-active.png") !important
+
+        &::before
+          content: ''
+          display: block
+          width:  100%
+          height: 100%
+          background: url("../img/arrow.png") no-repeat center / 2em !important
+        
+        +sm
+          visibility: visible 
+          border-radius: .45em 0 0 .45em
+          left: 50%
+          transform: translate(-100%, -50%)
+          top: 0
+
+      &-next
+        border-radius: 0 .45em .45em 0
+        transform: translateX(100%)
+
+        +sm
+          border-radius: 0 .45em .45em 0 !important
+          left: auto
+          right: 50%
+          transform: translate(100%, -50%)
+
+        &::before
+          transform: rotate(180deg)
+  
+  &__wrap
+    padding-left:  4.05em
+    padding-right: 4.05em
+
+    +sm
+      padding-left:  1em
+      padding-right: 1em
+
+  &-text
+    position: absolute
+    z-index: 2
+    right:   0
+    top:     3.4em
+    padding: 2.59em 0
+
+    +sm
+      position: relative
+      top:     -2em
+      padding: 1.26em 0
+
+      text-align: center
+  
+  &-header
+    position: relative
+    text-align: center
+    margin-top:   -1em
+    margin-bottom: 1em
+    padding-bottom: 2.5em
+
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      width: 100%
+      bottom: 0
+      height: 1em
+      background: url("../img/header-separator.png") no-repeat center / cover
+
+    &__title
+      margin: 0
+      margin-bottom: .6em
+
+      font-size: 1.5em
+      +regular
+
+      .price
+        font-size: 1.35em
+        +bold
+
+  &__title
+    margin: 0
+    margin-bottom: 0.57em
+
+    color: #383c43
+    +bold
+    font-size: 2.5em
+
+    +sm
+      font-size: 1.7em
+  
+  &__para
+    margin: 0
+    margin-bottom: 1.73em
+
+    font-size: .75em
+    color: #474e53
+
+    &:last-of-type
+      // margin-bottom: 0

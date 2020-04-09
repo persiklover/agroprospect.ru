@@ -1,0 +1,117 @@
+.hero
+  color: white
+
+  +sm
+    margin-top: 1.2em
+    height: 15.25em
+
+    text-align: center
+    overflow: visible
+
+  &__slider
+
+    @media (min-width: 1921px)
+      left: 50%
+      transform: translateX(-50%)
+      width: 1844px
+
+    +sm
+      overflow: visible
+
+  &-slider
+    padding: 0 1.25em
+
+    +sm
+      padding: 0
+
+    &:hover .owl-prev,
+    &:hover .owl-next
+      visibility: visible
+    
+    &-item
+      position: relative
+      overflow: hidden
+      height: 29em
+
+      +sm
+        height: 15.25em
+      
+      &__content
+
+        @media (max-width: 1400px)
+          padding: 0 3em
+
+      &__bg
+        position: absolute
+        z-index: -2
+        width:  100%
+        height: 29em
+
+        +sm
+          height: 15.25em
+    
+    .owl
+
+      &-nav
+      
+      &-prev,
+      &-next
+        visibility: hidden
+        position: absolute
+        top: 50%
+        left: -.75em
+        transform: translateY(-50%)
+        width:  6.9em
+        height: 5.4em
+        background: white !important
+        box-shadow: 0.8em 1.3em 8.1em rgba(0, 0, 0, 0.45) !important
+        border-radius: .45em
+
+        font-size: .42em !important
+
+        +sm
+          visibility: visible 
+          border-radius: .45em 0 0 .45em
+          left: 50%
+          transform: translate(-100%, -50%)
+          top: 0
+
+        &:hover::before
+          background-image: url("../img/arrow-active.png") !important
+
+        &::before
+          content: ''
+          display: block
+          width:  100%
+          height: 100%
+          background: url("../img/arrow.png") no-repeat center / 2em !important
+
+      &-next
+        border-radius: 0 .45em .45em 0 !important
+
+        left: auto
+        right: -.75em
+
+        +sm
+          left: auto
+          right: 50%
+          transform: translate(100%, -50%)
+
+        &::before
+          transform: rotate(180deg)
+
+  &__title
+    margin: 0
+    margin-top: 2.8em
+    margin-bottom: 0.79em
+
+    font-size: 2.5em
+    +bold
+
+    +sm
+      margin-top: 0
+      padding-top: 2em
+      font-size: 1.6em
+  
+  &__btn
+    font-size: .87em

@@ -1,0 +1,53 @@
+.modal
+  position: fixed
+  z-index: 999
+  left: 0
+  top:  0
+  width:  100%
+  height: 100%
+  background-color: rgba(black, 0.72)
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  pointer-events: none
+  user-select: none
+  opacity: 0
+
+  cursor: pointer
+
+  &.visible
+    pointer-events: all
+    user-select: initial
+    opacity: 1
+
+  &-content
+    position: relative
+    background: white
+
+    cursor: initial
+  
+  &-close
+    position: absolute
+    right: -.6em
+    top:   -.6em
+    width:  1.2em
+    height: 1.2em
+    border: none
+    border-radius: 50%
+    padding: 0
+    box-shadow: 0.3em 0.4em 2.9em rgba(56, 60, 67, 0.39)
+    background-color: #383c43
+
+    color: #7e8185
+    font-size: 1.2em
+    line-height: 1
+
+    cursor: pointer
+
+    +sm
+      right: .5em
+      top:   .5em
+
+      color: white

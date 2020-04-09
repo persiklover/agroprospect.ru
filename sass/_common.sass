@@ -1,0 +1,85 @@
+::selection
+  // background-color: $mainColor
+  
+body
+  +regular
+  font-size: 2.4em
+
+  @media (min-width: 1921px)
+    font-size: 2.4em
+
+  @media (max-width: 1141px)
+    font-size: 1.25vw
+
+  +sm
+    font-size: 6.65vw
+
+hr
+  margin: 0
+  border: none
+  height: .042em
+  background-color: #ebebeb
+
+.btn
+  box-shadow: 0.3em 0.4em 2.1em rgba(12, 126, 75, 0.35)
+  background-color: #18965e
+  border-radius: .25em
+  border: none
+  border-bottom: .175em solid #0c7e4b
+  padding: 1em 2.3em
+
+  color: #fff
+  +bold
+  font-size: .75em
+  letter-spacing: 0.045em
+
+  transition: all .2s ease-in
+
+  cursor: pointer
+
+  &:hover,
+  &:focus
+    background-color: #d6b603
+    border-bottom-color: #c1a400
+    box-shadow: 0.3em 0.4em 2.1em rgba(168, 143, 0, 0.35)
+
+.grid
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+
+  .row
+    display: flex
+    width: 100%
+    margin-bottom: 3.5em
+
+    +sm
+      flex-direction: column
+      margin-bottom: 0.5em
+
+  .col6
+    width: 50%
+    margin-right: 1.5em
+
+    +sm
+      width: 100%
+      margin: 0
+      margin-bottom: 2em
+
+.card
+  box-shadow: 0.8em 1.3em 4em rgba(0, 0, 0, 0.09)
+  background-color: #fff
+  border-radius: .25em
+
+.board
+  padding: 2.91em 0
+
+.sm-only
+  display: none
+  +sm
+    display: block
+
+.hide-sm
+  +sm
+    display: none
