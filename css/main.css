@@ -2321,7 +2321,8 @@ hr {
   }
 
   .presentation--small .presentation__wrap {
-    padding: 1em;
+    padding: .5em;
+    padding-top: 0;
   }
 
   .presentations .presentation {
