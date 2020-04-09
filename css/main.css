@@ -2317,6 +2317,7 @@ hr {
   .presentation--small .presentation-text {
     width: 100%;
     height: auto;
+    top: 0;
   }
 
   .presentation--small .presentation__wrap {
