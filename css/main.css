@@ -1381,8 +1381,8 @@ hr {
 
 .presentation--small .presentation-text {
   width: 25em;
-  height: 17em;
-  top: 50%;
+  height: 24em;
+  top: 5em;
   z-index: -1;
 }
 
@@ -1400,9 +1400,9 @@ hr {
 }
 
 .presentation--small .presentation__wrap {
-  padding-left: 6em;
-  padding-right: 2em;
-  font-size: 1.5em;
+  padding-left: 4.5em;
+  padding-right: 1em;
+  font-size: 2em;
 }
 
 .presentations {
