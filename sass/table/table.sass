@@ -5,24 +5,9 @@
 
   text-align: left
 
-  +sm
-    display: none
-  
-  &-mobile
-    display: none
-    border-radius: .2em
-
-    .tr
-      display: flex
-      justify-content: space-between
-      align-items: center
-    
-    .th,
-    .td
-      padding: .8em !important
-
+  &-wrap
     +sm
-      display: table
+      overflow-x: scroll
 
   thead
     position: relative
